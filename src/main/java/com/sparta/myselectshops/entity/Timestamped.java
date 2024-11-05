@@ -1,5 +1,6 @@
 package com.sparta.myselectshops.entity;
 
+import com.sparta.myselectshops.dto.ProductMypriceRequestDto;
 import jakarta.persistence.*;
 import lombok.Getter;
 import org.springframework.data.annotation.CreatedDate;
@@ -22,4 +23,5 @@ public abstract class Timestamped {
     @Column
     @Temporal(TemporalType.TIMESTAMP)
     private LocalDateTime modifiedAt;
+
 }
